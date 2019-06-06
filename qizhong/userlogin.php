@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>登录</title>
-    <link href="css/com.wyh.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/com.wyh.css" rel="stylesheet">
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
@@ -185,7 +185,7 @@ include_once ("html/header.html");
     </div>
     <div class="login-box">
         <div class="title">
-            <span>欢迎登录豫豪新闻账户</span>
+            <span>欢迎登录豫豪商城账户</span>
         </div>
         <div class="login_inner">
             <!--登录错误提示消息-->

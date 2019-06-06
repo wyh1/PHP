@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="js/jquery-2.1.0.min.js"></script>
-<!--    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">-->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <link href="css/com.wyh.css" rel="stylesheet">
     <style type="text/css">

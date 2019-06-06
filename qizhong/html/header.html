@@ -1,51 +1,44 @@
 <!-- 头部 start -->
-    <header id="header">
-        <div class="top_banner">
-            <img src="images/banner.jpg" width="100%" height="128px" alt="">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="padding: 5px;" href="index.php">
+                <img alt="Brand" src="images/uugai.com_1545124023742.png" style="height: 40px">
+            </a>
         </div>
-        <div class="shortcut" style="width: 1200px;height: 50px;">
-            <!-- 未登录状态  -->
-            <!--<div class="login_out"  style="height: 50px;line-height: 36px;float: right;">-->
-                <!--<a style="color: #000;font-size: 12px;margin: 0 10px;" href="userlogin.php">登录</a>-->
-                <!--<a style="color: #000;font-size: 12px;margin: 0 10px;" href="useradd.php">注册</a>-->
-            <!--</div>-->
-            <!-- 登录状态  -->
-            <div class="login"  style="height: 50px;line-height: 36px;float: right; width: 205px;font-size: 12px;">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="#"> -yh- <span class="sr-only">(current)</span></a></li>-->
+                <li><a href="index.php">首页</a></li>
+                <li><a href="userlogin.php">登录</a></li>
+                <li><a href="useradd.php">注册</a></li>
+                <li><a href="userlist.php">用户管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
                 <?php
                 if (isset($_COOKIE["user"])){
-                echo "<span>欢迎回来," . $_COOKIE["user"] . "!</span>";
-                echo "<a href=\"shop.php\" class=\"collection\" style=\"color: #ff7676; margin: 0 16px 0 10px;\">购物车</a>";
-                echo" <a style=\"font-size: 12px;color: #a1a1a1;\" href=\"javascript:location.href='exit.php';\">退出</a>";
+                echo "<p class=\"navbar-text\">欢迎回来：". $_COOKIE["user"] . "!</p>";
+                echo "<li><a href=\"shop.php\"><span class=\"text-danger\">购物车</span> </a></li>";
+                echo"<li><a href=\"javascript:location.href='exit.php';\"><span class=\"text-muted\">退出</span></a></li>";
                 } else {
                 echo "
-                <a style=\"color: #000;font-size: 12px;margin: 0 10px;\" href=\"userlogin.php\">登录</a>
-                <a style=\"color: #000;font-size: 12px;margin: 0 10px;\" href=\"useradd.php\">注册</a>
+                <p class=\"navbar-text\">没有获取到用户，请<a href=\"userlogin.php\" class=\"navbar-link\">登录</a></p>
                 ";
                 }
                 ?>
-                <!--<span>欢迎回来，admin</span>-->
-                <!--<a href="" class="collection" style="color: #ff7676; margin: 0 16px 0 10px;">购物车</a>-->
-                <!--<a style="font-size: 12px;color: #a1a1a1;" href="javascript:location.href='exit.php';">退出</a>-->
-            </div>
+                <!--<p class="navbar-text">欢迎回来：张三!</p>-->
+                <!--<li><a href="#"><span class="text-danger">购物车</span> </a></li>-->
+                <!--<li><a href="#"><span class="text-muted">退出</span> </a></li>-->
+            </ul>
         </div>
-    </header>
-    <!-- 头部 end -->
-     <!-- 首页导航 -->
-    <div class="navitem">
-        <ul class="nav">
-            <li class="nav-active"><a href="#">首页</a></li>
-            <li><a href="#">时政</a></li>
-            <li><a href="#">国际</a></li>
-            <li><a href="#">财经</a></li>
-            <li><a href="#">生活</a></li>
-            <li><a href="#">金融</a></li>
-            <li><a href="#">台湾</a></li>
-            <li><a href="#">华人</a></li>
-            <li><a href="#">娱乐</a></li>
-            <li><a href="#">体育</a></li>
-            <li><a href="#">文化</a></li>
-            <li><a href="#">演出</a></li>
-            <li><a href="#">理论</a></li>
-        </ul>
     </div>
-    
+</nav>
+<div class="top_banner">
+    <img src="images/banner3.png" width="100%" height="128px" alt="">
+</div>
