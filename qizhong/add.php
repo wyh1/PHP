@@ -103,10 +103,3 @@ include_once("html/footer.html");
 ?>
 </body>
 </html>
-<?php
-/**
- * Created by PhpStorm.
- * User: 11030
- * Date: 2019/4/27
- * Time: 0:25
- */
