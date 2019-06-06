@@ -73,7 +73,6 @@ if ((($_FILES["file"]["type"] == "image/gif")
         }
         else
         {
-            // 如果 upload 目录不存在该文件则将文件上传到 upload 目录下
             $photo=md5($_FILES["file"]["name"].$registertime).".$extension";
             move_uploaded_file($_FILES["file"]["tmp_name"], "photo/" . $photo);
         }
