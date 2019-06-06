@@ -222,7 +222,6 @@
                                 <input type="email" class="form-control" id="email" name="email" placeholder="请输入邮箱地址"/>
                                 <span class="glyphicon glyphicon-remove form-control-feedback" id="emailmsg" aria-hidden="true"></span>
                             </div>
-
                         </td>
                     </tr>
                     <tr>
