@@ -1,0 +1,51 @@
+<!-- 头部 start -->
+    <header id="header">
+        <div class="top_banner">
+            <img src="images/banner.jpg" width="100%" height="128px" alt="">
+        </div>
+        <div class="shortcut" style="width: 1200px;height: 50px;">
+            <!-- 未登录状态  -->
+            <!--<div class="login_out"  style="height: 50px;line-height: 36px;float: right;">-->
+                <!--<a style="color: #000;font-size: 12px;margin: 0 10px;" href="userlogin.php">登录</a>-->
+                <!--<a style="color: #000;font-size: 12px;margin: 0 10px;" href="useradd.php">注册</a>-->
+            <!--</div>-->
+            <!-- 登录状态  -->
+            <div class="login"  style="height: 50px;line-height: 36px;float: right; width: 205px;font-size: 12px;">
+                <?php
+                if (isset($_COOKIE["user"])){
+                echo "<span>欢迎回来," . $_COOKIE["user"] . "!</span>";
+                echo "<a href=\"shop.php\" class=\"collection\" style=\"color: #ff7676; margin: 0 16px 0 10px;\">购物车</a>";
+                echo" <a style=\"font-size: 12px;color: #a1a1a1;\" href=\"javascript:location.href='exit.php';\">退出</a>";
+                } else {
+                echo "
+                <a style=\"color: #000;font-size: 12px;margin: 0 10px;\" href=\"userlogin.php\">登录</a>
+                <a style=\"color: #000;font-size: 12px;margin: 0 10px;\" href=\"useradd.php\">注册</a>
+                ";
+                }
+                ?>
+                <!--<span>欢迎回来，admin</span>-->
+                <!--<a href="" class="collection" style="color: #ff7676; margin: 0 16px 0 10px;">购物车</a>-->
+                <!--<a style="font-size: 12px;color: #a1a1a1;" href="javascript:location.href='exit.php';">退出</a>-->
+            </div>
+        </div>
+    </header>
+    <!-- 头部 end -->
+     <!-- 首页导航 -->
+    <div class="navitem">
+        <ul class="nav">
+            <li class="nav-active"><a href="#">首页</a></li>
+            <li><a href="#">时政</a></li>
+            <li><a href="#">国际</a></li>
+            <li><a href="#">财经</a></li>
+            <li><a href="#">生活</a></li>
+            <li><a href="#">金融</a></li>
+            <li><a href="#">台湾</a></li>
+            <li><a href="#">华人</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">文化</a></li>
+            <li><a href="#">演出</a></li>
+            <li><a href="#">理论</a></li>
+        </ul>
+    </div>
+    
