@@ -22,7 +22,26 @@
         function deleteUser(id){
             //用户安全提示
             if(confirm("您确定要删除吗？")){
-                location.href="php/delete.php?id="+id;
+                if (window.XMLHttpRequest)
+                {
+                    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                    xmlhttp=new XMLHttpRequest();
+                }
+                else
+                {
+                    // IE6, IE5 浏览器执行代码
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange=function()
+                {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        alert(xmlhttp.responseText);
+                        location.reload();
+                    }
+                }
+                xmlhttp.open("GET","delete.php?id="+id,true);
+                xmlhttp.send();
             }
         }
     </script>

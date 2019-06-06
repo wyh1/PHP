@@ -7,7 +7,6 @@
     <title>用户注册</title>
     <link href="css/com.wyh.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<!--    <script src="js/jquery-2.1.0.min.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/checkform.js" type="text/javascript"></script>
@@ -114,7 +113,7 @@
                             <label for="username">用户名：</label>
                         </td>
                         <td class="td_right text">
-                            <div class="form-group "id="usernameClass" >
+                            <div class="form-group " id="usernameClass" >
                             <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名" aria-describedby="inputSuccess2Status">
                             <span class="glyphicon glyphicon-remove form-control-feedback" id="usernamemsg" aria-hidden="true"></span>
                             </div>
@@ -125,7 +124,7 @@
                             <label for="password">密码：</label>
                         </td>
                         <td class="td_right text">
-                            <div class="form-group "id="passwordClass" >
+                            <div class="form-group " id="passwordClass" >
                             <input type="password" class="form-control" id="password"  name="password" placeholder="请输入密码" aria-describedby="inputSuccess2Status">
                                 <span class="glyphicon glyphicon-remove form-control-feedback" id="passwordmsg" aria-hidden="true"></span>
 <!--                                <span id="inputError2Status" class="sr-only">(error)</span>-->
@@ -137,7 +136,7 @@
                             <label for="repassword">确认密码：</label>
                         </td>
                         <td class="td_right text">
-                            <div class="form-group "id="repasswordClass" >
+                            <div class="form-group " id="repasswordClass" >
                                 <input type="password" class="form-control" id="repassword" name="repassword" placeholder="请确认密码" aria-describedby="inputSuccess2Status">
                                 <span class="glyphicon glyphicon-remove form-control-feedback" id="repasswordmsg" aria-hidden="true"></span>
                             </div>
@@ -148,7 +147,7 @@
                             <label for="age">年龄：</label>
                         </td>
                         <td class="td_right text">
-                            <div class="form-group "id="ageClass" >
+                            <div class="form-group " id="ageClass" >
                                 <input type="text" class="form-control" id="age" name="age"  placeholder="请输入年龄" aria-describedby="inputSuccess2Status">
                                 <span class="glyphicon glyphicon-remove form-control-feedback" id="agemsg" aria-hidden="true"></span>
                             </div>
@@ -200,7 +199,7 @@
                             <label for="tel">电话：</label>
                         </td>
                         <td class="td_right text">
-                            <div class="form-group "id="telClass" >
+                            <div class="form-group " id="telClass" >
                                 <input type="text" class="form-control" id="tel" name="tel" placeholder="请输入电话号码"/>
                                 <span class="glyphicon glyphicon-remove form-control-feedback" id="telmsg" aria-hidden="true"></span>
                             </div>
@@ -219,7 +218,7 @@
                             <label for="email">Email：</label>
                         </td>
                         <td class="td_right text">
-                            <div class="form-group "id="emailClass" >
+                            <div class="form-group " id="emailClass" >
                                 <input type="email" class="form-control" id="email" name="email" placeholder="请输入邮箱地址"/>
                                 <span class="glyphicon glyphicon-remove form-control-feedback" id="emailmsg" aria-hidden="true"></span>
                             </div>
